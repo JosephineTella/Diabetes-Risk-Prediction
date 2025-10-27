@@ -1,17 +1,20 @@
 # Diabetes-Risk-Prediction
-### Introduction
+
+<img width="285" height="190" alt="image" src="https://github.com/user-attachments/assets/bad9a0fd-267b-4c7a-87f8-dcd39e6cb335" />
+
+### 1. Introduction
 Diabetes is one of the most prevalent chronic diseases worldwide, posing serious health challenges if not detected early. Timely diagnosis and risk prediction are essential for effective management and prevention of complications. In this project, machine learning techniques are applied to develop predictive models capable of identifying individuals at risk of diabetes based on key health and lifestyle factors such as age, BMI, blood glucose levels, and smoking history.
 
 This study presents the development of a robust machine learning framework for predicting the onset of diabetes in individuals based on health and lifestyle data. The methodology incorporates comprehensive data preprocessing, including missing value imputation, normalization of numerical features, and encoding of categorical variables. Exploratory data analysis is conducted to identify trends, correlations, and anomalies that may inform predictive modeling. Multiple supervised learning algorithms—including Logistic Regression, Random Forest, and Gradient Boosting—are trained, with hyperparameter tuning and k-fold cross-validation employed to optimize performance. Model evaluation is conducted using established metrics such as accuracy, precision, recall and F1-score
 
 As a supportive component of the methodology, feature importance analysis and SHAP (SHapley Additive exPlanations) values are applied to enhance interpretability and provide transparency in model decision-making. These techniques assist in identifying the most influential predictors of diabetes onset, offering supplementary insights for clinical interpretation. The anticipated outcome is the development of a reliable and interpretable predictive model that facilitates early risk identification, supports preventive interventions, improves healthcare resource allocation, and contributes to reducing the global burden of diabetes.
 
-### Problem Statement
+### 2. Problem Statement
 Diabetes mellitus is one of the fastest-growing chronic diseases worldwide, leading to severe health complications such as cardiovascular disease, kidney failure, and nerve damage. Despite significant advances in healthcare, many individuals remain undiagnosed until symptoms become severe. Traditional diagnostic methods often rely on laboratory testing after clinical signs have appeared, which limits early detection and prevention.
 
 Machine learning provides an opportunity to address this gap by identifying hidden patterns in health data that can predict diabetes risk at an early stage. However, the challenge lies in selecting the most effective model that achieves high accuracy and generalization while minimizing false predictions. This project, therefore, seeks to evaluate multiple machine learning algorithms to determine the most reliable model for diabetes prediction based on key health indicators.
 
-### Significance of the Study
+### 3. Significance of the Study
 
 •	    Early Detection: Enabling timely medical intervention and lifestyle changes before the onset of severe symptoms.
 
@@ -25,7 +28,7 @@ Machine learning provides an opportunity to address this gap by identifying hidd
 
 Ultimately, this research emphasizes the potential of artificial intelligence and data science to transform healthcare through predictive analytics and evidence-based solutions
 
-### Methodology Overview
+### 4. Methodology Overview
 
 This project employed a systematic, step-by-step approach to predict the likelihood of diabetes using machine learning techniques. The methodology outlines all processes from data acquisition to model interpretation and explainability to ensure accuracy, reliability, and reproducibility.
 
@@ -59,7 +62,7 @@ Model performance was assessed using multiple evaluation metrics, including Accu
 - **Model Interpretation and Explainability:**
 Feature importance and SHAP values were used to understand how each feature affects predictions. This step ensures transparency, builds trust, and provides insights into which factors most influence diabetes risk.
 
-### Libraries and tools
+### 5. Libraries and tools
 - **Data Manipulation and Analysis:**
   - Pandas: For cleaning, manipulation, and structuring data.
   - NumPy: For efficient numerical operations and array computations.
@@ -78,6 +81,50 @@ Feature importance and SHAP values were used to understand how each feature affe
   - Jupyter Notebook: Interactive platform for code development, analysis, and documentation.
   - Anaconda: Comprehensive distribution for efficient package management and deployment in data science projects.
 
+### 6. Project Visualizations
+####     i. Feature Correlation Matrix
+<img width="843" height="490" alt="Screenshot 2025-10-26 055229" src="https://github.com/user-attachments/assets/fac82e54-ec0a-408b-84f3-74e6019114c5" />
 
+Correlation matrix showing relationships between key diabetic features.
 
+####     ii. Model Performance Metrics
+<img width="864" height="409" alt="Screenshot 2025-10-26 055410" src="https://github.com/user-attachments/assets/42d12858-897d-422c-97f7-8ae85b77007d" />
 
+Comparison of accuracy, precision, recall and F1 scores across different models before and after model optimization via hyper parameter tuning and class weight
+
+####   iii. Feature Importances
+<img width="704" height="304" alt="Screenshot 2025-10-26 204530" src="https://github.com/user-attachments/assets/b5ea395e-84bf-4f8d-a29d-2923b70577f8" />
+
+Bar plot providing insights into how features contribute to model predicition
+
+<img width="841" height="368" alt="Screenshot 2025-10-26 204653" src="https://github.com/user-attachments/assets/addbaa71-dd7d-4c68-880a-de6d6f8226d8" />
+
+Mean absolute SHAP values for the top 5 features influencing the model’s predictions of diabetes
+
+<img width="745" height="261" alt="Screenshot 2025-10-26 204720" src="https://github.com/user-attachments/assets/bee83d91-ccfc-4852-8fad-9cfb3a1caba5" />
+
+SHAP summary plot showing both the magnitude and direction of each feature’s influence on the model’s predictions for diabetes
+
+### 7. Results
+
+Key findings include:
+
+  - **Correlation matrix:** the correlation analysis highlights that diabetes is most strongly associated with elevated HbA1c and blood glucose levels, followed by higher BMI, older age and hypertension.
+
+  - **Model Evaluation:** model performance revealed random forest as the best performing model 
+  
+  - **Feature Importance:** Key indicators of diabetes prediction included HbA1c level, blood glucose level, age, bmi and hypertension 
+
+### 8. Future Work
+
+Potential areas of future development include:
+
+-  integrating multi-modal data sources, combining clinical, biochemical, and genomic data to develop more robust and personalized predictive models for diabetes. The application of deep learning architectures (e.g., attention-based neural networks) with interpretable frameworks like SHAP or LIME could provide both predictive power and transparency.
+  
+-  comparative analyses between SHAP and other explainable AI (XAI) methods (such as Integrated Gradients or Counterfactual Explanations) could offer deeper insights into model behavior and the consistency of feature attributions across frameworks
+
+### 9. Conclusion
+
+This study developed and evaluated multiple machine learning models to predict diabetes occurrence using structured clinical data, with a particular focus on the interpretability of the best-performing model. Among the tested algorithms, the Random Forest Classifier demonstrated superior predictive performance across multiple metrics, including accuracy, precision, recall and F1-score, confirming its robustness and adaptability for binary classification tasks in healthcare domains.
+
+Through the application of SHAP (SHapley Additive exPlanations), the model’s decision-making process was rendered transparent and interpretable. SHAP analysis identified the most influential features contributing to diabetes risk, with HbA1c level, blood glucose level, BMI, age and hypertension, emerging as the dominant predictors. The feature importance ranking aligned well with established clinical evidence, thereby strengthening the biological and diagnostic validity of the model’s predictions.
