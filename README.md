@@ -128,3 +128,18 @@ Potential areas of future development include:
 This study developed and evaluated multiple machine learning models to predict diabetes occurrence using structured clinical data, with a particular focus on the interpretability of the best-performing model. Among the tested algorithms, the Random Forest Classifier demonstrated superior predictive performance across multiple metrics, including accuracy, precision, recall and F1-score, confirming its robustness and adaptability for binary classification tasks in healthcare domains.
 
 Through the application of SHAP (SHapley Additive exPlanations), the model’s decision-making process was rendered transparent and interpretable. SHAP analysis identified the most influential features contributing to diabetes risk, with HbA1c level, blood glucose level, BMI, age and hypertension, emerging as the dominant predictors. The feature importance ranking aligned well with established clinical evidence, thereby strengthening the biological and diagnostic validity of the model’s predictions.
+
+### References
+
+Doshi-Velez, F., & Kim, B. (2017). Towards a rigorous science of interpretable machine learning. arXiv preprint arXiv:1702.08608.
+Jobin, A., Ienca, M., & Vayena, E. (2019). The global landscape of AI ethics guidelines. Nature Machine Intelligence, 1(9), 389–399. https://doi.org/10.1038/s42256-019-0088-2
+
+Mehrabi, N., Morstatter, F., Saxena, N., Lerman, K., & Galstyan, A. (2021). A survey on bias and fairness in machine learning. ACM Computing Surveys (CSUR), 54(6), 1–35. https://doi.org/10.1145/3457607
+
+Miller, T. (2019). Explanation in artificial intelligence: Insights from the social sciences. Artificial Intelligence, 267, 1–38. https://doi.org/10.1016/j.artint.2018.07.007
+
+Rajkomar, A., Dean, J., & Kohane, I. (2019). Machine learning in medicine. New England Journal of Medicine, 380(14), 1347–1358. https://doi.org/10.1056/NEJMra1814259
+
+Topol, E. J. (2019). High-performance medicine: The convergence of human and artificial intelligence. Nature Medicine, 25(1), 44–56. https://doi.org/10.1038/s41591-018-0300-7
+
+Zou, J., Schiebinger, L., & Obermeyer, Z. (2023). Ensuring fairness in machine learning for health care. Nature Reviews Genetics, 24(3), 173–188. https://doi.org/10.1038/s41576-022-00560-1
