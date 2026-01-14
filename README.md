@@ -1,11 +1,3 @@
-###  Introduction
-
-Diabetes, which is one of the dominant and chronic diseases across the globe, comes with life-threatening challenges if it is not detected early enough. Timely diagnosis with risk prediction is an effective way of preventing and managing the complications associated with the disease. In this study, machine learning techniques were utilized in developing predictive models that were capable of detecting individuals who are at the risk of having diabetes based on key factors such as health and lifestyle. 
-
-Robust machine learning models were optimized for predicting diabetes in individuals from the onset based on data collated on their lifestyle and health. The methodology employed incorporated comprehensive data preprocessing, exploratory data analysis, multiple supervised learning algorithms such as Logistic Regression, Random Forest, Gradient Boosting etc were trained and hyperparameter tuning and k-fold cross-validation were employed to enhance their performance. Each model were evaluated for their performance before and after hyper parameter tuning and k-fold cross-validation using metrics such as accuracy, precision, recall and F1-score.
-
-Feature importance analysis and SHAP (SHapley Additive exPlanations) values were also utilized to enhance model interpretability and provide transparency in model decision-making. These techniques via their ability to identify the most influential diabetes predictors, assist in developing reliable and interpretable predictive models which can aid early risk detection, preventive interventions, allocation of healthcare resources and minimising the global burden of diabetes
-
 
 ###  Project Visualizations
 ####     i. Feature Correlation Matrix
