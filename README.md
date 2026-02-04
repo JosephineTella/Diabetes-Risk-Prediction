@@ -1,22 +1,24 @@
 
 ###  Project Visualizations
 ####     1. Feature Correlation Matrix
-<img width="843" height="490" alt="Screenshot 2025-10-26 055229" src="https://github.com/user-attachments/assets/fac82e54-ec0a-408b-84f3-74e6019114c5" />
-
 
 Correlation matrix showing relationships between key diabetic features.
-The correlation analysis indicated that advancing age was moderately associated with higher BMI (r = 0.34) and showed positive relationships with hypertension (r = 0.25), heart disease (r = 0.23), and diabetes (r = 0.26), suggesting increased cardiometabolic risk with aging. Hypertension and heart disease were positively but weakly correlated (r = 0.12), reflecting a modest yet clinically relevant cardiovascular link. Diabetes showed its strongest associations with blood glucose level (r = 0.42) and HbA1c level (r = 0.40), underscoring their central role in diabetes diagnosis and risk assessment. BMI is also moderately correlated with diabetes (r = 0.21), reinforcing excess body weight as an important risk factor. Overall, diabetes was most strongly associated with elevated blood glucose and HbA1c levels, followed by older age, higher BMI, and hypertension.
+<img width="843" height="490" alt="Screenshot 2025-10-26 055229" src="https://github.com/user-attachments/assets/fac82e54-ec0a-408b-84f3-74e6019114c5" />
+
+The correlation analysis indicated that advancing age was moderately associated with higher BMI (r = 0.34) and showed positive relationships with hypertension (r = 0.25), heart disease (r = 0.23), and diabetes (r = 0.26), suggesting increased cardiometabolic risk with aging. Hypertension and heart disease were positively but weakly correlated (r = 0.12), reflecting a modest yet clinically relevant cardiovascular link. Diabetes showed its strongest associations with blood glucose level (r = 0.42) and HbA1c level (r = 0.40), underscoring their central role in diabetes diagnosis and risk assessment. BMI was also moderately correlated with diabetes (r = 0.21), reinforcing excess body weight as an important risk factor. Overall, diabetes was most strongly associated with elevated blood glucose and HbA1c levels, followed by older age, higher BMI, and hypertension.
 
 ####     2. Classification Models
 
 ####      2i. Classification Models Performance Evaluation: 
 
-A suite of machine learning classifiers including logistic regression (LR), stochastic gradient descent (SGD), decision tree (DT), k-nearest neighbors (KNN), random forest (RF), and extreme gradient boosting (XGBoost) were evaluated. A comparison of accuracy, precision, recall, F1 and receiver operating characteristic area under the curve (ROC-AUC) across the different models before and after model optimization via hyper parameter tuning, class weight and threshold optimization was performed.
+A suite of machine learning classifiers (logistic regression (LR), stochastic gradient descent (SGD), decision tree (DT), k-nearest neighbors (KNN), random forest (RF), and extreme gradient boosting (XGBoost)) were evaluated. A comparison of accuracy, precision, recall, F1 and receiver operating characteristic area under the curve (ROC-AUC) across the different models before and after model optimization via hyper parameter tuning, class weight and threshold optimization was performed.
+
 
 <img width="983" height="327" alt="Screenshot 2026-01-14 040741" src="https://github.com/user-attachments/assets/43d72c53-f7f2-48e9-94bf-a5c7421c9917" />
 
 
 Across all evaluated models, XGBoost achieved the best overall performance, demonstrating the strongest balance between precision, recall, and discrimination, with the highest ROC-AUC and F1-score under both default and optimized thresholds and consistently high precision, indicating stable calibration and effective modeling of non-linear feature interactions. Random forest also showed strong discriminative ability but was more sensitive to threshold adjustments, shifting from a conservative to a recall-oriented classifier after optimization. In contrast, linear models (logistic regression and SGD) exhibited stable performance across thresholds with high recall but lower precision, reflecting the limitations of linear decision boundaries, while KNN and decision tree models showed weaker robustness, with minimal gains from threshold optimization for KNN and increased instability for decision trees due to coarse probability estimates.
+
 
 ####      2ii.  ROC Curves 
 The plot presents the receiver operating characteristic (ROC) curves for the six optimized classification models evaluated on the test dataset
@@ -40,7 +42,7 @@ Mean absolute SHAP values for the top 5 features influencing XGBoost model's pre
 <img width="695" height="387" alt="Screenshot 2026-01-14 045659" src="https://github.com/user-attachments/assets/b76dd287-f193-45b8-a812-f193b1e865f4" />
 
 
-The SHAP (SHapley Additive exPlanations) feature importance chart for an XGBoost model, showed the top 5 most important features based on their average impact on model predictions. The ranking was consistent between both the feature importance and SHAP charts, but SHAP values reveal that age had a more significant role than simple feature importance suggested. The dramatic dominance of HbA1c was more pronounced in this SHAP analysis, emphasizing that blood sugar control was the primary driver of the model's predictions.
+The SHAP (SHapley Additive exPlanations) feature importance chart for the XGBoost model, showed the top 5 most important features based on their average impact on model predictions. The ranking was consistent between both the feature importance and SHAP charts, but SHAP values reveal that age had a more significant role than simple feature importance suggested. The dominance of HbA1c was more pronounced in this SHAP analysis, emphasizing that blood sugar control was the primary driver of the model's predictions.
 
 
 ####      2v.  SHAP Summary Plot
