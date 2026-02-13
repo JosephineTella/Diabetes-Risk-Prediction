@@ -153,7 +153,8 @@ SHAP summary plot showing both the magnitude and direction of each feature’s i
 The SHAP summary plot for the Random Forest regression model showed that predictions were primarily driven by metabolic indicators, with HbA1c and blood glucose emerging as the most influential features, where higher values consistently increased predicted risk and lower values reduce it. Features are ranked by mean absolute SHAP value, highlighting a clear hierarchy in which glycemic markers dominated the model's decisions, followed by moderate contributions from age and smaller, incremental effects from BMI. Hypertension has the least influence, with SHAP values clustered near zero, indicating minimal marginal impact once other factors were considered. 
 
 
-
+### Conclusion
+Across correlation, classification, and regression analyses, the findings consistently demonstrate that diabetes prediction is driven primarily by direct metabolic indicators (HbA1c and blood glucose). Age and BMI contribute meaningfully but secondarily, while hypertension and heart disease show modest additional influence. From a modeling perspective, tree-based ensemble methods (XGBoost and Random Forest) substantially outperform linear approaches, indicating that nonlinear interactions among predictors are central to accurately modeling diabetes risk. The convergence of statistical correlation, machine learning performance, and SHAP-based explainability strengthens the robustness and clinical interpretability of these findings.
 
 
 
